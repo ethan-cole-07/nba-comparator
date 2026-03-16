@@ -126,3 +126,4 @@ display = pd.DataFrame({
     name2: v2,
     'Edge': [name1 if a >= b else name2 for a, b in zip(v1, v2)]
 })
+st.dataframe(display, use_container_width=True, hide_index=True)
